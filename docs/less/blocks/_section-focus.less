@@ -1,0 +1,130 @@
+.section-focus {
+    position: relative;
+    padding: 70px 0px 31px;
+
+    overflow: hidden;
+
+    &::before{
+        position: absolute;
+        content: "";
+        right: 50%;
+        top: 0;
+        height: 65px;
+        width: 65px;
+        transform: translate(50%, -50%) rotate(45deg);
+        background-color: #a4eecb;
+    }
+
+    @media (min-width: 768px){
+        padding: 60px 0px 0px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1200px){
+        padding-top: 80px;
+
+        &::before{
+            display: block;
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 50%;
+            height: 130px;
+            width: 130px;
+            transform: translate(50%, -50%) rotate(45deg);
+            background-color: #a4eecb;
+        }
+    }
+}
+
+.section-focus-center {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    @media (min-width: 768px){
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.section-focus-img {
+    position: relative;
+    width: 275px;
+
+    @media (min-width: 768px){
+        width: 290px;
+        height: 520px;
+    }
+
+    @media (min-width: 1200px){
+        width: 470px;
+        height: 731px;
+    }
+}
+
+.section-focus-img img {
+    vertical-align: top;
+    height: auto;
+    max-width: 100%;
+
+    @media (min-width: 768px){
+        max-width: unset;
+        height: 520px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    @media (min-width: 1200px){
+        height: auto;
+    }
+}
+
+.section-focus-content {
+    max-width: 450px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    @media (min-width: 768px){
+        max-width: unset;
+        width: 406px;
+        padding-bottom: 150px;
+        text-align: start;
+    }
+
+    @media (min-width: 1200px){
+        width: 473px;
+        padding-bottom: 123px;
+    }
+}
+
+.section-focus .section-title {
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    margin-bottom: 36px;
+
+    @media (min-width: 768px){
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: 1200px){
+        margin-bottom: 36px;
+        letter-spacing: 2.9px;
+    }
+}
+
+.section-focus .section-header {
+    margin-bottom: 32px;
+
+    @media (min-width: 768px){
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: 1200px){
+        margin-bottom: 44px;
+    }
+}

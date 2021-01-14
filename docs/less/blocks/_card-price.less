@@ -1,0 +1,145 @@
+.card-price {
+    width: 290px;
+    padding: 36px 0px 40px;
+    margin-bottom: 20px;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+
+    transition: 0.2s ease-in;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 768px){
+        width: 230px;
+        margin-bottom: 0;
+        margin-right: 25px;
+        padding-top: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    @media (min-width: 1200px){
+        width: 303px;
+        margin-right: 30px;
+        padding-top: 35px;
+    }    
+
+    &:hover {
+        .card-price-button {
+            background-color: #fff;
+            color: #666666;
+            box-shadow: 0px 0px 10px #666666;
+        }
+        background-color:  rgba(48, 79, 254, 0.95);
+        box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 1);
+    }
+
+    &:active {
+        .card-price-button {
+            box-shadow: 0px 0px 30px #000;
+        }
+        background-color:  rgba(48, 79, 254, 0.95);
+        box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 1);
+    }
+}
+
+.card-price-head {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-price-title {
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: rgb(179, 179, 179);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.72;
+    letter-spacing: 2.7px;
+}
+
+.card-price-coast {
+    margin-bottom: 17px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 3.5px;
+}
+
+.card-price-coast-box {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0px 10px;
+    border-radius: 12px;
+
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 2.2px;
+}
+
+.card-price-desk {
+    margin-bottom: 34px;
+    padding: 25px 10px 0px;
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 1.9;
+
+    @media (min-width: 768px){
+        padding-top: 29px;
+        margin-bottom: 33px;
+    }
+
+    @media (min-width: 1200px){
+        line-height: 2.5;
+        padding-top: 24px;
+        margin-bottom: 25px;
+    }
+}
+  
+.card-price-button {
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; 
+    color: #fff;
+
+    transition: 0.2s ease-in;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+  
+  
+
+
+  
+  
+
+  
+  
+
+
+
+
+
+  
+
